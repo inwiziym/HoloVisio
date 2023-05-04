@@ -10,9 +10,9 @@
     <Grid Background="Black">
         <Button x:Name="bt_holo" Content="Голографическое видео" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF272727" Width="120" Height="30" FontSize="10" FontFamily="Impact" Foreground="#FF7F7F7F"/>
         <Button x:Name="bt_onevideo" Content="Одно видео" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" Height="30" Width="120" Background="#FF272727" FontSize="15" FontFamily="Impact" Foreground="#FF7F7F7F" Click="bt_onevideo_Click"/>
-        <Button x:Name="Exit" Content="Выход" Margin="0,79,0,0" Foreground="#FF7F7F7F" Background="#FF272727" FontFamily="Impact" FontSize="15" Click="Exit_Click" Height="30" HorizontalAlignment="Left" Width="120" VerticalAlignment="Top"/>
-        <MediaElement x:Name="MediaElement1" Source="C:\Users\zador\Pictures\photo1.jpg" Margin="540,79,538,441" Width="200" Height="200" MediaEnded="MediaElement1_MediaEnded"/>
-        <MediaElement x:Name="MediaElement2" Source="C:\Users\zador\Pictures\photo1.jpg" Margin="339,281,741,239" RenderTransformOrigin="0.5,0.5" Height="200" Width="200" MediaEnded="MediaElement2_MediaEnded" IsMuted="True">
+        <Button x:Name="Exit" Content="Выход" Margin="0,81,0,0" Foreground="#FF7F7F7F" Background="#FF272727" FontFamily="Impact" FontSize="15" Click="Exit_Click" Height="30" HorizontalAlignment="Left" Width="120" VerticalAlignment="Top"/>
+        <MediaElement x:Name="MediaElement1" Margin="540,79,538,441" Width="200" Height="200" MediaEnded="MediaElement1_MediaEnded"/>
+        <MediaElement x:Name="MediaElement2" Margin="339,281,741,239" RenderTransformOrigin="0.5,0.5" Height="200" Width="200" MediaEnded="MediaElement2_MediaEnded" IsMuted="True">
             <MediaElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -22,7 +22,7 @@
                 </TransformGroup>
             </MediaElement.RenderTransform>
         </MediaElement>
-        <MediaElement x:Name="MediaElement3" Source="C:\Users\zador\Pictures\photo1.jpg" Margin="741,281,339,239" RenderTransformOrigin="0.5,0.5" Height="200" Width="200" MediaEnded="MediaElement3_MediaEnded" IsMuted="True">
+        <MediaElement x:Name="MediaElement3"  Margin="741,281,339,239" RenderTransformOrigin="0.5,0.5" Height="200" Width="200" MediaEnded="MediaElement3_MediaEnded" IsMuted="True">
             <MediaElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -32,7 +32,7 @@
                 </TransformGroup>
             </MediaElement.RenderTransform>
         </MediaElement>
-        <MediaElement x:Name="MediaElement4" Source="C:\Users\zador\Pictures\photo1.jpg" Margin="540,484,540,36" RenderTransformOrigin="0.5,0.5" Width="200" Height="200" MediaEnded="MediaElement4_MediaEnded" IsMuted="True">
+        <MediaElement x:Name="MediaElement4"  Margin="540,484,540,36" RenderTransformOrigin="0.5,0.5" Width="200" Height="200" MediaEnded="MediaElement4_MediaEnded" IsMuted="True">
             <MediaElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1"/>
@@ -44,6 +44,7 @@
         </MediaElement>
 
         <MediaElement x:Name="me_onevideo" Margin="0,-17,0,17" HorizontalAlignment="Center" Width="1280" Height="720" MediaEnded="me_onevideo_MediaEnded"/>
+      
 
     </Grid>
 </Window>

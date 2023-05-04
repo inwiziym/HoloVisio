@@ -20,6 +20,13 @@ namespace HoloVisio
         // Это для 4х видео
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            MediaElement1.Source = null;
+            MediaElement2.Source = null;
+            MediaElement3.Source = null;
+            MediaElement4.Source = null;
+            me_onevideo.Source = null;
+
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Video files (*.mp4;*.avi;*.wmv)|*.mp4;*.avi;*.wmv|All files (*.*)|*.*";
             if (openFileDialog.ShowDialog() == true)
@@ -42,6 +49,13 @@ namespace HoloVisio
         // Это для 1 видео
         private void bt_onevideo_Click(object sender, RoutedEventArgs e)
         {
+            MediaElement1.Source = null;
+            MediaElement2.Source = null;
+            MediaElement3.Source = null;
+            MediaElement4.Source = null;
+            me_onevideo.Source = null;
+
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Video files (*.mp4;*.avi;*.wmv)|*.mp4;*.avi;*.wmv|All files (*.*)|*.*";
             if (openFileDialog.ShowDialog() == true)
