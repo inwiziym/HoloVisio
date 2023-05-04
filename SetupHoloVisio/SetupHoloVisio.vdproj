@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:SetupHoloVisio"
+"ProjectName" = "8:InstallerHoloVisio"
 "LanguageId" = "3:1049"
 "CodePage" = "3:1251"
 "UILanguageId" = "3:1049"
@@ -34,13 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_381B959D22DB59EFD388739F5F11329A"
+        "OwnerKey" = "8:_6B61656B59114B70B5B2F16036D73E3D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6B61656B59114B70B5B2F16036D73E3D"
+        "OwnerKey" = "8:_381B959D22DB59EFD388739F5F11329A"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -61,13 +61,21 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\SetupHoloVisio.msi"
+        "OutputFilename" = "8:Release\\InstallerHoloVisio.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -77,6 +85,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -212,9 +236,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:SetupHoloVisio"
+        "ProductName" = "8:HoloVisio"
         "ProductCode" = "8:{7A93FB29-6013-4E93-BBFF-74FB75B1A0B7}"
-        "PackageCode" = "8:{A5821051-CF1A-4AC3-9D4D-5F34E5C8CAD0}"
+        "PackageCode" = "8:{ACF53101-5924-410E-9054-549541BAE518}"
         "UpgradeCode" = "8:{C6F7032A-130B-4CC5-AC68-01C9005EC29A}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -225,9 +249,9 @@
         "Manufacturer" = "8:Default Company Name"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:SetupHoloVisio"
+        "Title" = "8:HoloVisio"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:DingoBobgo&&Valerka"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -749,7 +773,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_6B61656B59114B70B5B2F16036D73E3D"
             {
-            "SourcePath" = "8:..\\HoloVisio\\obj\\Debug\\HoloVisio.exe"
+            "SourcePath" = "8:..\\HoloVisio\\obj\\Release\\HoloVisio.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_52265A1F218F4216ABD289620DF22859"
