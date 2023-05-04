@@ -68,6 +68,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -238,7 +246,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:HoloVisio"
         "ProductCode" = "8:{7A93FB29-6013-4E93-BBFF-74FB75B1A0B7}"
-        "PackageCode" = "8:{ACF53101-5924-410E-9054-549541BAE518}"
+        "PackageCode" = "8:{F81EBEF0-1751-48A7-9394-B195F1E30291}"
         "UpgradeCode" = "8:{C6F7032A-130B-4CC5-AC68-01C9005EC29A}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -360,7 +368,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_6820CBCC456348699FE2309A37FAEF8D"
             {
-            "Name" = "8:ThisFile"
+            "Name" = "8:HoloVisio"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
